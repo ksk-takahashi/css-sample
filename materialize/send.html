@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materialize Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  header, footer.page-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-color {
+    background-color: #1e87f0;
+  }
+
+  .footer-color {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+
+  nav.breadcrumbs-container {
+    background-color: #e9ecef;
+    margin-top: 20px;
+    border-radius: 0;
+  }
+
+  .breadcrumb {
+    color: #1e87f0 !important;
+  }
+</style>
+</head>
+<body>
+
+<header class="header-color white-text center-align">
+    <h1>ヘッダータイトル</h1>
+</header>
+
+<nav class="breadcrumbs-container z-depth-0">
+  <div class="nav-wrapper">
+    <div class="col s12">
+      <a href="#" class="breadcrumb">Home</a>
+      <a href="#" class="breadcrumb">Category</a>
+      <a href="#" class="breadcrumb">Page</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <form>
+    <p>お問い合わせ理由：</p>
+    <p>
+      <label>
+        <input name="reason" type="radio" checked />
+        <span>理由1</span>
+      </label>
+    </p>
+    <!-- 同様に他のラジオボタンを追加 -->
+    
+    <div class="input-field">
+      <input id="customer-name" type="text" class="validate" required>
+      <label for="customer-name">お客様名</label>
+    </div>
+
+    <!-- 入力フィールドを追加 -->
+
+    <button class="btn waves-effect waves-light blue" type="submit" name="action">確認
+      <i class="material-icons right">send</i>
+    </button>
+  </form>
+</div>
+
+<footer class="footer-color page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <p class="grey-text text-darken-4">&copy; 2024 Your Company</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

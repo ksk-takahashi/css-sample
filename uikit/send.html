@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UIkit Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.16/css/uikit.min.css"
+    />
+  </head>
+  <body>
+    <header class="uk-background-primary uk-light uk-padding uk-text-center">
+      <h1>ヘッダータイトル</h1>
+    </header>
+
+    <div class="uk-container">
+      <ul class="uk-breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Category</a></li>
+        <li><span>Page</span></li>
+      </ul>
+
+      <form>
+          <p>お問い合わせ理由：</p>
+          <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label
+              ><input class="uk-radio" type="radio" name="reason" value="1" />
+              理由1</label
+            >
+            <!-- 同様に他のラジオボタンを追加 -->
+          </div>
+
+          <div class="uk-margin">
+            <label class="uk-form-label" for="customer-name">お客様名：</label>
+            <div class="uk-form-controls">
+              <input
+                class="uk-input"
+                id="customer-name"
+                type="text"
+                placeholder="お客様名"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- 同様に他の入力フィールドを追加 -->
+
+          <div class="uk-margin">
+            <textarea
+              class="uk-textarea"
+              rows="5"
+              placeholder="本文"
+              required
+            ></textarea>
+          </div>
+
+          <button class="uk-button uk-button-default" type="submit">
+            確認
+          </button>
+      </form>
+    </div>
+
+    <footer class="uk-text-center uk-padding uk-background-muted">
+      <p>&copy; 2024 Your Company</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.16/js/uikit.min.js"></script>
+  </body>
+</html>

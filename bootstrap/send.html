@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="bg-primary text-white p-4">
+      <h1>ヘッダータイトル</h1>
+    </header>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Category</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Page</li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <form>
+          <p>お問い合わせ理由：</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="reason"
+              id="reason1"
+              value="1"
+            />
+            <label class="form-check-label" for="reason1">理由1</label>
+          </div>
+          <!-- 同様に他のラジオボタンを追加 -->
+
+          <div class="form-group">
+            <label for="customer-name">お客様名：</label>
+            <input
+              type="text"
+              class="form-control"
+              id="customer-name"
+              name="customer_name"
+              required
+            />
+          </div>
+
+          <!-- 同様に他の入力フィールドを追加 -->
+          <button type="submit" class="btn btn-primary">確認</button>
+      </form>
+    </div>
+
+    <footer class="text-center bg-light p-3">
+      <p>&copy; 2024 Your Company</p>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
